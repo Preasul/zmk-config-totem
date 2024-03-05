@@ -81,8 +81,8 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp I       &kp J       &kp K       &kp L
-    &kp LALT    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M &mt QMARK COMMA &mt EXCL DOT &mt SEMI APOS  &kp RET
-                                        &kp LCTRL   &kp LSHFT   &kp SPACE       &kp BSPC    &to NAV     &mt EQUAL MINUS
+    &kp LSHIFT  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M &mt QMARK COMMA &mt EXCL DOT &mt SEMI APOS  &kp RET
+                                        &kp LCTRL   &kp LALT    &kp SPACE       &kp BSPC    &to NAV     &mt EQUAL MINUS
                         >;
                 };
 

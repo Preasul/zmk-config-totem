@@ -81,7 +81,7 @@ label= "BASE"                              ;
 
                 &kp K       &kp W       &kp U       &kp Y       &kp Z           &kp Q       &kp G       &kp F       &kp M       &kp B
                 &kp P       &kp O       &kp E       &kp I     &mt LCTRL COMMA &mt LALT APOS &kp A       &kp T       &kp N       &kp V
-    &kp EXCL    &kp X       &kp D       &kp R       &kp L       &kp DOT         &kp RET     &kp S       &kp H       &kp C       &kp J       &kp QMARK
+    &kp EXCL    &kp X       &kp D       &kp L       &kp R       &kp DOT         &kp RET     &kp H       &kp C       &kp S       &kp J       &kp QMARK
                                         &kp SPACE   &kp LSHFT   &mo SYM         &mo NAV     &kp RSHFT   &kp BSPC    
                         >;
                 };

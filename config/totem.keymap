@@ -79,9 +79,9 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp W       &kp P       &kp K       &kp L       &kp Z           &kp Q       &kp F       &kp V       &kp B       &kp Y
-                &kp U       &kp I       &kp E       &kp O   &mt LCTRL COMMA     &kp DOT     &kp A       &kp T       &kp N       &kp M
-    &kp EXCL    &kp X       &kp D       &kp C       &kp R       &kp APOS        &kp RET     &kp H       &kp G       &kp S       &kp J       &kp QMARK
+                &kp W       &kp B       &kp U       &kp J       &kp Z           &kp Q       &kp G       &kp L       &kp D       &kp Y
+                &kp P       &kp I       &kp E       &kp O   &mt LCTRL COMMA     &kp DOT     &kp A       &kp T       &kp N       &kp M
+    &kp EXCL    &kp X       &kp K       &kp C       &kp R       &kp APOS        &kp RET     &kp H       &kp F       &kp S       &kp V       &kp QMARK
                                         &kp LSHFT   &kp SPACE   &mo SYM         &mo NAV     &kp BSPC    &kp RSHFT   
                         >;
                 };
@@ -106,8 +106,8 @@ label= "NAVI"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &mt F10 N0  &mt F1 N1   &mt F2 N2   &mt F3 N3   &kp STAR        &trans      &trans      &trans      &trans      &trans      
-                &kp FSLH    &mt F4 N4   &mt F5 N5   &mt F6 N6   &kp EQUAL       &trans      &trans      &trans      &trans      &trans      
-    &trans      &kp BSLH    &mt F7 N7   &mt F8 N8   &mt F9 N9   &kp MINUS       &trans      &trans      &trans      &trans      &trans      &trans       
+                &kp FSLH    &mt F4 N4   &mt F5 N5   &mt F6 N6   &kp MINUS       &trans      &trans      &trans      &trans      &trans      
+    &trans      &kp BSLH    &mt F7 N7   &mt F8 N8   &mt F9 N9   &kp EQUAL       &trans      &trans      &trans      &trans      &trans      &trans       
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };

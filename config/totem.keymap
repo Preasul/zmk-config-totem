@@ -46,15 +46,23 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
+        pass: pass {
+            label = "password";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N2>
+                = <&macro_tap &kp LEFT &kp RIGHT &kp LEFT &kp RIGHT>
+                , <&kp EXCL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp R> 
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp G &kp I &kp F>
+                , <&macro_tap &kp I &kp D &kp I &kp C &kp U &kp L &kp O &kp U &kp S> 
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp E> 
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp L &kp E &kp G &kp A &kp N &kp Z &kp A>
                 ;
         };
     };
@@ -68,11 +76,11 @@
 label= "BASE"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃     K     ┃     W     ┃     U     ┃     Y     ┃     Z     ┃   ┃     Q     ┃     G     ┃     F     ┃     M     ┃     B     ┃
+//             ┃     '     ┃     ,     ┃     .     ┃     P     ┃     Y     ┃   ┃     F     ┃     G     ┃     C     ┃     R     ┃     L     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     P     ┃     O     ┃     E     ┃     I     ┃ LCTRL / , ┃   ┃     .     ┃     A     ┃     T     ┃     N     ┃     V     ┃
+//             ┃     A     ┃     O     ┃     E     ┃     U     ┃     I     ┃   ┃     D     ┃     H     ┃     T     ┃     N     ┃     L     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃     !     ┃     X     ┃     D     ┃     L     ┃     R     ┃     '     ┃   ┃   ENTER   ┃     H     ┃     C     ┃     S     ┃     J     ┃     ?     ┃
+// ┃     !     ┃     ;     ┃     Q     ┃     J     ┃     K     ┃     X     ┃   ┃     B     ┃     M     ┃     W     ┃     V     ┃     Z     ┃     ?     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   LSHFT   ┃   SPACE   ┃    Sym    ┃   ┃    Nav    ┃   BSPC    ┃   RSHFT   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -211,7 +219,7 @@ label= "TVP 2"                             ;
 
                 &trans      &trans      &trans      &trans      &trans          &trans      &trans   &bt BT_SEL 0 &bt BT_SEL 1  &trans
                 &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
-    &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
+    &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &pass
                                         &trans      &trans      &trans          &trans      &trans      &trans
                         >;
                 };

@@ -261,8 +261,8 @@ label= "TVP 2"                             ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &trans      &trans      &togspe     &scanpre    &trans          &trans      &trans      &trans      &trans      &trans
-                &trans      &kp C_RED   &kp C_GREEN &drop       &trans          &trans      &trans   &bt BT_SEL 0 &bt BT_SEL 1  &trans
-    &pass       &kp F12 &kp PAUSE_BREAK &kp CLEAR2 &kp KP_ENTER &kp KP_N0       &trans      &trans      &trans      &trans      &trans      &trans
+                &trans      &kp KP_N0   &kp KP_N1   &drop       &trans          &trans      &trans   &bt BT_SEL 0 &bt BT_SEL 1  &trans
+    &pass       &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
                                         &trans      &trans      &trans          &trans      &trans      &trans
                         >;
                 };

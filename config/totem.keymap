@@ -95,6 +95,33 @@
                 , <&macro_tap &kp KP_N2>
                 ;
         };
+        ezbake: ezbake {
+            label = "ezbake";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_tap &kp LEFT &kp RIGHT &kp LEFT &kp RIGHT &kp LEFT &kp RIGHT &kp LEFT &kp RIGHT>
+                , <&kp EXCL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp R>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp I &kp D &kp I &kp C &kp U &kp L &kp O &kp U &kp S> 
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp E> 
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp L &kp E &kp G &kp A &kp N &kp Z &kp A &kp RET>
+                , <&macro_wait_time 200>
+                , <&macro_tap &kp KP_N1>
+                , <&macro_wait_time 2200>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp DOWN &kp END &kp DOWN>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &to BASE>
+                , <&macro_tap &kp KP_N3>
+                ;
+        };
     };
 
         keymap {
@@ -247,9 +274,9 @@ label= "TVP 2"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &none       &talky       &none           &none       &none       &none       &none       &none
+                &none       &none       &kp KP_N3   &talky       &none           &none       &none       &none       &none       &none
                 &to BASE    &kp KP_N0   &kp KP_N1   &drop       &none           &none       &none    &bt BT_SEL 0 &bt BT_SEL 1  &trans
-    &pass       &none       &none       &none       &none       &none           &none       &none       &none       &none       &none       &trans
+    &pass       &none       &none       &ezbake     &none       &none           &none       &none       &none       &none       &none       &trans
                                         &trans      &trans      &trans          &trans      &trans      &trans
                         >;
                 };

@@ -111,17 +111,15 @@
                 , <&macro_press &kp LSHFT>
                 , <&macro_tap &kp E> 
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp L &kp E &kp G &kp A &kp N &kp Z &kp A>
-                , <&macro_wait_time 200>
-                , <&macro_tap &kp RET>
-                , <&macro_wait_time 2200>
+                , <&macro_tap &kp L &kp E &kp G &kp A &kp N &kp Z &kp A &kp RET>
+                , <&macro_wait_time 150>
                 , <&macro_tap &kp KP_N1>
-                , <&macro_wait_time 40>
+                , <&macro_tap &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp RET>
                 , <&macro_press &kp LCTRL>
                 , <&macro_tap &kp DOWN &kp END &kp DOWN>
                 , <&macro_release &kp LCTRL>
-                , <&macro_tap &to BASE>
                 , <&macro_tap &kp KP_N3>
+                , <&macro_tap &to BASE>
                 ;
         };
     };
@@ -130,7 +128,7 @@
                 compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-                base_layer {
+                base_layer {            
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "BASE"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -276,7 +274,7 @@ label= "TVP 2"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &none       &talky      &none           &none       &none       &none       &none       &none
+                &none       &none       &kp KP_N3   &talky      &none           &none       &none       &none       &none       &none
                 &to BASE    &kp KP_N0   &kp KP_N1   &drop       &none           &none       &none    &bt BT_SEL 0 &bt BT_SEL 1  &trans
     &pass       &none       &none       &ezbake     &none       &none           &none       &none       &none       &none       &none       &trans
                                         &trans      &trans      &trans          &trans      &trans      &trans

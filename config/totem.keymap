@@ -63,6 +63,16 @@
                 key-positions = <0 1 2>;
                 bindings = <&kp F2>;
             };
+            combo_exst {
+                timeout-ms = <80>;
+                key-positions = <4 34>;
+                bindings = <&outsteno>;
+            };
+            combo_entst {
+                timeout-ms = <80>;
+                key-positions = <5 35>;
+                bindings = <&intosteno>;
+            };
     };
 
     macros {
@@ -143,8 +153,8 @@ label= "BASE"                              ;
 
                 &kp APOS    &kp COMMA   &kp DOT     &kp P       &kp Y           &kp F       &kp G       &kp C       &kp R       &kp L
                 &kp A       &kp O       &kp E       &kp U       &kp I           &kp D       &kp H       &kp T       &kp N       &kp S
- &mt QMARK EXCL &kp SEMI    &kp Q       &kp J       &kp K       &kp X           &kp B       &kp M       &kp W       &kp V       &kp Z       &remo 
-                                        &kp LSHFT   &kp SPACE   &mo SYM         &mo NAV     &kp BSPC    &kp RSHFT   
+ &mt QMARK EXCL &kp SEMI    &kp Q       &kp J       &kp K       &kp X           &kp B       &kp M       &kp W       &kp V       &kp Z       &kp BSPC 
+                                        &kp LSHFT   &kp SPACE   &mo SYM         &mo NAV     &remo       &kp RSHFT   
                         >;
                 };
 
@@ -167,7 +177,7 @@ label= "NAVI"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp N0      &kp N1     &kp N2       &kp N3      &kp STAR        &intosteno  &trans      &trans      &trans      &trans      
+                &kp N0      &kp N1     &kp N2       &kp N3      &kp STAR        &trans      &trans      &trans      &trans      &trans      
                 &kp FSLH    &kp N4     &kp N5       &kp N6      &kp EQUAL       &trans      &trans      &trans      &trans      &trans      
     &trans      &kp BSLH    &kp N7     &kp N8       &kp N9      &kp MINUS       &trans      &trans      &trans      &trans      &trans      &trans       
                                         &trans      &kp RET     &trans          &trans      &trans      &trans      
@@ -193,7 +203,7 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans      &trans      &trans      &trans      &outsteno       &kp LALT &mt LBKT LPAR &mt RBKT RPAR &kp CARET  &kp AMPS
+                &trans      &trans      &trans      &trans      &trans          &kp LALT &mt LBKT LPAR &mt RBKT RPAR &kp CARET  &kp AMPS
                 &trans      &trans      &trans      &trans      &trans          &kp CAPS    &kp SEMI    &kp GRAVE   &kp APOS    &kp HASH
     &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp EXCL    &kp QMARK   &kp DLLR    &kp AT      &kp GRAVE
                                         &trans      &trans      &trans          &trans      &kp DEL     &trans
@@ -274,7 +284,7 @@ label= "TVP 2"                             ;
                 &kp APOS    &kp COMMA   &kp DOT     &kp P       &kp Y           &kp F       &kp G       &kp C       &kp R       &kp L
                 &kp A       &kp O       &kp E       &kp U       &kp I           &kp D       &kp H       &kp T       &kp N       &kp S
     &remo       &kp SEMI    &kp Q       &kp J       &kp K       &kp X           &kp B       &kp M       &kp W       &kp V       &kp Z       &kp N1 
-                                        &kp N4      &kp SPACE   &mo SYM         &mo NAV     &kp N2      &kp N3   
+                                        &kp N4      &kp SPACE   &kp N5          &kp N6     &kp N2      &kp N3   
                         >;
                 };
         };

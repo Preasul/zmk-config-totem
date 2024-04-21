@@ -43,10 +43,25 @@
                 key-positions = <16 17 18>;
                 bindings = <&tog TVP1>;
             };
-            combo_tvp2 {
+            combo_pass {
                 timeout-ms = <100>;
-                key-positions = <11 12 13>;
-                bindings = <&tog TVP2>;
+                key-positions = <10 12 14>;
+                bindings = <&pass>;
+            };
+            combo_f1 {
+                timeout-ms = <70>;
+                key-positions = <22 24>;
+                bindings = <&kp F1>;
+            };
+            combo_jumpdown {
+                timeout-ms = <70>;
+                key-positions = <24 25>;
+                bindings = <&kp F3>;
+            };
+            combo_f2 {
+                timeout-ms = <100>;
+                key-positions = <21 22 23>;
+                bindings = <&kp F2>;
             };
     };
 
@@ -70,25 +85,16 @@
                 , <&macro_tap &kp L &kp E &kp G &kp A &kp N &kp Z &kp A &kp RET>
                 ;
         };
-        ezbake: ezbake {
-            label = "ezbake";
+        remo: remo {
+            label = "removelast";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&macro_tap &kp LEFT &kp RIGHT &kp LEFT &kp RIGHT &kp LEFT &kp RIGHT &kp LEFT &kp RIGHT>
-                , <&kp EXCL>
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp I &kp D &kp I &kp C &kp U &kp L &kp O &kp U &kp S> 
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp E> 
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp L &kp E &kp G &kp A &kp N &kp Z &kp A &kp RET>
-                , <&macro_tap &kp F2>
-                , <&macro_tap &to BASE>
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp BSPC> 
+                , <&macro_release &kp LCTRL>
                 ;
         };
     };
@@ -115,8 +121,8 @@ label= "BASE"                              ;
 
                 &kp APOS    &kp COMMA   &kp DOT     &kp P       &kp Y           &kp F       &kp G       &kp C       &kp R       &kp L
                 &kp A       &kp O       &kp E       &kp U       &kp I           &kp D       &kp H       &kp T       &kp N       &kp S
- &mt QMARK EXCL &kp SEMI    &kp Q       &kp J       &kp K       &kp X           &kp B       &kp M       &kp W       &kp V       &kp Z       &kp RCTRL 
-                                        &kp LSHFT   &kp SPACE   &mo SYM         &mo NAV     &kp BSPC    &kp RSHFT   
+ &mt QMARK EXCL &kp SEMI    &kp Q       &kp J       &kp K       &kp X           &kp B       &kp M       &kp W       &kp V       &kp Z       &kp BSPC 
+                                        &kp LSHFT   &kp SPACE   &mo SYM         &mo NAV     &remo       &kp RSHFT   
                         >;
                 };
 
@@ -219,7 +225,7 @@ label= "TVP 1"                             ;
 
                 &none       &kp PG_UP   &none       &kp PG_DN   &none           &none       &kp K_PREV  &kp K_MUTE  &kp K_NEXT  &none 
                 &none       &kp LEFT    &kp UP      &kp RIGHT   &none           &none  &kp K_VOL_DN &kp K_PLAY_PAUSE &kp K_VOL_UP &none 
-    &trans      &kp LALT    &kp HOME    &kp DOWN    &kp END     &kp TAB         &none       &none       &none       &none       &none       &trans
+   &bt BT_SEL 0 &kp LALT    &kp HOME    &kp DOWN    &kp END     &kp TAB         &none       &none       &none       &none       &none       &bt BT_SEL 1
                                         &trans      &trans      &trans          &trans      &trans      &trans
                         >;
                 };
@@ -245,7 +251,7 @@ label= "TVP 2"                             ;
 
                 &none       &kp F3      &kp F4      &kp F5      &none           &none       &none       &none       &none       &none
                 &none       &pass       &kp F1      &kp F2      &none           &none       &none    &bt BT_SEL 0 &bt BT_SEL 1  &none
-    &none       &none       &none       &ezbake     &none       &none           &none       &none       &none       &none       &none       &trans
+    &none       &none       &none       &none       &none       &none           &none       &none       &none       &none       &none       &trans
                                         &trans      &trans      &trans          &trans      &trans      &trans
                         >;
                 };

@@ -41,7 +41,7 @@
             combo_tvp {
                 timeout-ms = <100>;
                 key-positions = <35 36 37>;
-                bindings = <&tog TVP1>;
+                bindings = <&tog TVP2>;
             };
             combo_pass {
                 timeout-ms = <100>;
@@ -72,6 +72,12 @@
                 timeout-ms = <80>;
                 key-positions = <5 35>;
                 bindings = <&intosteno>;
+            };
+            combo_btclr {
+                timeout-ms = <80>;
+                key-positions = <20 31>;
+                layers = <4>;
+                bindings = <&bt BT_CLR>;
             };
     };
 
@@ -114,7 +120,7 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&to TVP2>
+                = <&to TVP1>
                 , <&macro_tap &kp F6>
                 ;
         };
@@ -255,10 +261,10 @@ label= "TVP 1"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &kp PG_UP   &none       &kp PG_DN   &none           &none       &kp K_PREV  &kp K_MUTE  &kp K_NEXT  &none 
-                &none       &kp LEFT    &kp UP      &kp RIGHT   &none           &none  &kp K_VOL_DN &kp K_PLAY_PAUSE &kp K_VOL_UP &none 
-   &bt BT_SEL 0 &kp LALT    &kp HOME    &kp DOWN    &kp END     &kp TAB         &none       &none       &none       &none       &none       &bt BT_SEL 1
-                                        &trans      &trans      &trans          &trans      &trans      &trans
+                &kp APOS    &kp COMMA   &kp DOT     &kp P       &kp Y           &kp F       &kp G       &kp C       &kp R       &kp L
+                &kp A       &kp O       &kp E       &kp U       &kp I           &kp D       &kp H       &kp T       &kp N       &kp S
+    &remo       &kp SEMI    &kp Q       &kp J       &kp K       &kp X           &kp B       &kp M       &kp W       &kp V       &kp Z       &kp N1 
+                                        &kp N4      &kp SPACE   &kp N5          &kp N6     &kp N2      &kp N3   
                         >;
                 };
 
@@ -281,10 +287,10 @@ label= "TVP 2"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp APOS    &kp COMMA   &kp DOT     &kp P       &kp Y           &kp F       &kp G       &kp C       &kp R       &kp L
-                &kp A       &kp O       &kp E       &kp U       &kp I           &kp D       &kp H       &kp T       &kp N       &kp S
-    &remo       &kp SEMI    &kp Q       &kp J       &kp K       &kp X           &kp B       &kp M       &kp W       &kp V       &kp Z       &kp N1 
-                                        &kp N4      &kp SPACE   &kp N5          &kp N6     &kp N2      &kp N3   
+                &none       &kp PG_UP   &none       &kp PG_DN   &none           &none       &kp K_PREV  &kp K_MUTE  &kp K_NEXT  &none 
+                &none       &kp LEFT    &kp UP      &kp RIGHT   &none           &none  &kp K_VOL_DN &kp K_PLAY_PAUSE &kp K_VOL_UP &none 
+   &bt BT_SEL 0 &kp LALT    &kp HOME    &kp DOWN    &kp END     &kp TAB         &none       &none       &none       &none       &none       &bt BT_SEL 1
+                                        &trans      &trans      &trans          &trans      &trans      &trans
                         >;
                 };
         };

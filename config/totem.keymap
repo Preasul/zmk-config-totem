@@ -75,8 +75,8 @@
             };
             combo_btclr {
                 timeout-ms = <80>;
-                key-positions = <20 31>;
-                layers = <4>;
+                key-positions = <0 9 10 19>;
+                layers = <5>;
                 bindings = <&bt BT_CLR>;
             };
     };

@@ -48,10 +48,17 @@
                 key-positions = <10 11 12>;
                 bindings = <&pass>;
             };
-            combo_adj {
+            combo_inadj {
                 timeout-ms = <100>;
                 key-positions = <32 33 34>;
-                bindings = <&tog ADJ>;
+                layers = <0 1 2 4 5>;
+                bindings = <&to ADJ>;
+            };
+            combo_outadj {
+                timeout-ms = <100>;
+                key-positions = <32 33 34>;
+                layers = <3>;
+                bindings = <&to BASE>;
             };
             combo_f1 {
                 timeout-ms = <70>;
@@ -71,11 +78,13 @@
             combo_exst {
                 timeout-ms = <80>;
                 key-positions = <4 34>;
+                layers = <4 5>;
                 bindings = <&outsteno>;
             };
             combo_entst {
                 timeout-ms = <80>;
                 key-positions = <5 35>;
+                layers = <0 1 2 4 5>;
                 bindings = <&intosteno>;
             };
             combo_btclr {

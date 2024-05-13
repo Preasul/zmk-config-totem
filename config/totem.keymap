@@ -240,10 +240,10 @@ label= "ADJ"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &kp COMMA   &kp DOT     &none       &none           &kp F10     &none       &kp F4      &kp MINUS   &none 
-                &none       &kp SQT     &kp DQT     &none       &none           &kp F11     &none       &kp EXCL    &kp QMARK   &none 
-    &none       &none       &kp LPAR    &kp LBKT    &none       &none           &kp F12     &none       &kp RET     &kp COLON   &none       &none 
-                                        &kp LSHFT   &kp RET     &kp RCTRL       &kp LCTRL   &none       &kp RSHFT
+                &none       &none       &none       &kp F5      &kp F10         &kp F11     &kp F12     &none       &none       &none 
+                &none       &kp SQT     &kp DQT     &kp DOT     &none           &none       &kp EXCL    &kp RET     &kp MINUS   &none 
+    &none       &none       &kp LPAR    &kp LBKT    &kp COMMA   &none           &none       &kp QMARK   &kp F4      &kp COLON   &none       &none 
+                                        &kp LCTRL   &kp LCTRL   &kp LCTRL       &kp LCTRL   &kp LCTRL   &kp LCTRL
                         >;
                 };
 

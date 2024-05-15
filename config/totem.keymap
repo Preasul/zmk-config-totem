@@ -252,7 +252,7 @@ label= "ADJ"                               ;
                 &none       &none       &none       &kp F5      &kp F10         &kp F11     &kp F12     &none       &none       &none 
                 &none       &kp SQT     &kp DQT     &kp DOT     &none           &none       &kp EXCL    &kp RET     &kp MINUS   &none 
     &none       &none       &kp LPAR    &kp LBKT    &kp COMMA   &none           &none       &kp QMARK   &kp F4      &kp COLON   &none       &none 
-                                        &kp LCTRL   &kp LCTRL   &kp LCTRL       &kp LCTRL   &kp LCTRL   &kp LCTRL
+                                        &none       &kp LCTRL   &kp LCTRL       &kp LCTRL   &kp LCTRL   &none    
                         >;
                 };
 

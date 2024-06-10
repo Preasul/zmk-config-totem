@@ -302,10 +302,10 @@ label= "TVP 2"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &kp PG_UP   &tog TVP3   &kp PG_DN   &none           &none       &kp K_PREV  &kp K_MUTE  &kp K_NEXT  &none 
+                &none       &kp PG_UP   &none       &kp PG_DN   &none           &none       &kp K_PREV  &kp K_MUTE  &kp K_NEXT  &none 
                 &none       &kp LEFT    &kp UP      &kp RIGHT   &none           &none  &kp K_VOL_DN &kp K_PLAY_PAUSE &kp K_VOL_UP &none 
    &bt BT_SEL 0 &kp LALT    &kp HOME    &kp DOWN    &kp END     &kp TAB         &none       &none       &none       &none       &none       &bt BT_SEL 1
-                                        &trans      &trans      &trans          &trans      &trans      &trans
+                                        &tog TVP3   &trans      &trans          &trans      &trans      &trans
                         >;
                 };
 
@@ -327,10 +327,10 @@ label= "TVP 3"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &tog TVP3   &none       &none           &none       &none       &none       &none       &none 
+                &none       &none       &none       &none       &none           &none       &none       &none       &none       &none 
               &mt RPAR LPAR &kp COMMA   &kp DOT     &kp RET     &kp DQT         &none       &none       &none       &none       &none       
- &mt QMARK EXCL &mt RBKT LBKT &kp COLON &kp F4      &kp MINUS   &kp SQT         &none       &none       &none       &none       &none       &none       
-                                        &kp DEL     &remo       &kp BSPC        &none       &none       &none       
+ &mt QMARK EXCL &mt RBKT LBKT &kp COLON &kp SPACE   &kp MINUS   &kp SQT         &none       &none       &none       &none       &none       &none       
+                                        &tog TVP3   &remo       &kp BSPC        &none       &none       &none       
                         >;
                 };
 
